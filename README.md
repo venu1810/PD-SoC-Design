@@ -26,18 +26,23 @@ In contrast to DES, AES has a configurable number of rounds based on the length 
 <img width="476" alt="aes_cipher schematic" src="https://github.com/user-attachments/assets/aa9ecca2-34b5-408e-ab35-b49db7568242">
 
 In VLSI design, the RTL to GDSII pipeline transforms an RTL description of a digital circuit into a physical layout that is prepared for production. It goes through several steps, including RTL synthesis, floor planning, placement, routing, and the creation of the GDSII file format, which is where the layout data is eventually included. This methodical procedure guarantees that the final IC layout precisely matches the intended functionality and satisfies manufacturing specifications.
- *
-*Picture of VSD Squadron:
+
+**AES Analysis**:
+AES is a commonly used cryptographic algorithm that is supported by both software and hardware nowadays. There are currently no known effective cryptanalytic attacks against AES. Furthermore, the inherent flexibility of AES's key length enables some "future-proofing" against advancements in the capacity to conduct thorough key searches.
+
+As with DES, AES security is only guaranteed, though, if proper implementation and key management are used.
+ 
+**Picture of VSD Squadron**:
 <img width="599" alt="vsd squadron" src="https://github.com/user-attachments/assets/1ae35eef-52fb-420c-ac24-af3f5b02bc73">
 
 
-Intorduction:
+**Intorduction**:
 
 ISA: "Instruction Set Architecture" is what ISA stands for.It's just a way to communicate with the computer. Generally speaking, we develop programs that need to be executed by the system using coding languages like C, Java, and others; however, machines cannot understand these languages. This is where ISA comes into play. ISA will be used to convert the written codes from assembly language to binary, or machine-readable language. For this purpose, the most recent ISA to be disclosed is the RISC V ISA.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
-RTL Designs: What Are They?
+**RTL Designs: What Are They?**
 
 A crucial stage in the VLSI design flow is RTL (Register-Transfer-Level) design, which focuses on building electronic circuits utilizing integrated circuits (ICs). By outlining the digital signal flow between hardware registers and the logical operations carried out on these signals, it describes a digital circuit. EDA Tools: What Are They?
 
@@ -55,7 +60,7 @@ Through a series of steps, the simplified RTL to GDS pipeline starts with an RTL
 
 https://images.app.goo.gl/ZS34Yp7621rUxnxPA[RTL 2 GDS]
 -------------------------------------------------------------------------------------------------------------------------------------------------------
-Stythesis in OpenLane: 
+**Stythesis in OpenLane**: 
 
 Synthesis: Parts from the Standard Cell Library are used to turn the RTL file into a circuit.
     The library's Standard Cells are arranged in a standard manner, with varying widths but the same height.
@@ -66,7 +71,7 @@ Synthesis: Parts from the Standard Cell Library are used to turn the RTL file in
 ----
 image::https://images.app.goo.gl/cwsFBX2pdMvjG2mV8[Synthesis flow in VLSI]
 
-Floor plan: 
+**Floor plan**: 
 In hierarchical processes, floorplanning offers a foundation for determining when the top level will occur. The clock cycle time is assigned to each block in a timing budget based on the top-level timing estimate. Timing closure is ensured by an efficient floorplan, which does this by arranging blocks to shorten essential paths, avoiding routing congestion that would result in longer paths, and removing the requirement for excessive routing for noise-sensitive blocks. The difficult part of designing a floor plan is making sure that there is enough room for standard cell placement, signal and clock routing, and high area efficiency.
 
 The dimensions and form of the chip or block are specified in the floorplan. Placement of IO and macro cells is being done so that effective routing space is accessible both between the macro and IO sections as well as between the channel region. We preserve the contiguous core area from the target cell library for standard cell placement and optimization technique.
@@ -74,7 +79,7 @@ The dimensions and form of the chip or block are specified in the floorplan. Pla
 <img width="928" alt="run floorplan " src="https://github.com/user-attachments/assets/ede7e193-1459-451b-bca4-cd03deea1566">
 
 
-Placement :
+**Placement** :
 
 From the floor planning phase forward, components are positioned within the allocated spaces.
     Within their cell boundaries are also the Standard Cells that are necessary for the design.
@@ -87,7 +92,7 @@ From the floor planning phase forward, components are positioned within the allo
 image::https://images.app.goo.gl/Vqz5wU7WdAnk41Q47[placement image]
 
 
-CTS(Clock tree synthesis):
+**CTS(Clock tree synthesis)**:
 
 A method for dividing the clock equally across each successive component of a VLSI design is called clock tree synthesis. Clock Tree Synthesis is used to minimize delay and skew. The clock tree limits and the placement data are supplied as input to Clock Tree Synthesis.
 
@@ -96,7 +101,7 @@ A method for dividing the clock equally across each successive component of a VL
 image::https://images.app.goo.gl/gNDyWN1t1Hg6g6hj7[Design before CTS]
 image::https://images.app.goo.gl/rSGBd4BdLyoNv2Un6[Design after CTS]
 
-Routing : 
+**Routing** : 
 
 Routing is the stage after Clock Tree Synthesis and optimization where-
 
