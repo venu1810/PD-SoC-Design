@@ -42,6 +42,8 @@ RTL to GDS Flow:
 
 Through a series of steps, the simplified RTL to GDS pipeline starts with an RTL file and ends with a GDS file that can be delivered to a foundry for fabrication. The following are the steps in the RTL to GDS flow:
 
+<img width="353" alt="image" src="https://github.com/user-attachments/assets/20c26306-aa4a-4bf6-84b5-c8564d107765">
+
 https://images.app.goo.gl/ZS34Yp7621rUxnxPA[RTL 2 GDS]
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 Stythesis in OpenLane: 
