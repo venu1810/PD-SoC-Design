@@ -15,6 +15,15 @@ Understood how to translate a high-level hardware description into a practical A
 3)Floor and Power Planning: Understood the significance of floor planning in chip partitioning and I/O pad placement.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
+Intorduction to my block **aes_cipher** :
+
+Unlike the Feistel cipher, the AES is an iterative cipher. "Substitution-permutation network" is the foundation of it. It consists of a sequence of interconnected operations, some of which are replacements (replacing inputs by particular outputs) and others which are permutations (rearranging bits).
+
+It's interesting to note that AES uses bytes rather than bits for all of its calculations. As a result, 128 bits in a plaintext block are treated as 16 bytes by AES. For matrix processing, these 16 bytes are organized into four rows and four columns.
+
+In contrast to DES, AES has a configurable number of rounds based on the length of the key. For 128-bit keys, AES utilizes 10 rounds; for 192-bit keys, it uses 12 rounds; and for 256-bit keys, it uses 14 rounds. Different 128-bit round keys are used in each of these rounds.
+
+<img width="476" alt="aes_cipher schematic" src="https://github.com/user-attachments/assets/aa9ecca2-34b5-408e-ab35-b49db7568242">
 
 In VLSI design, the RTL to GDSII pipeline transforms an RTL description of a digital circuit into a physical layout that is prepared for production. It goes through several steps, including RTL synthesis, floor planning, placement, routing, and the creation of the GDSII file format, which is where the layout data is eventually included. This methodical procedure guarantees that the final IC layout precisely matches the intended functionality and satisfies manufacturing specifications.
  *
