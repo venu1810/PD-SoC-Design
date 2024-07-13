@@ -16,13 +16,11 @@ Understood how to translate a high-level hardware description into a practical A
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Day 1: 
 In VLSI design, the RTL to GDSII pipeline transforms an RTL description of a digital circuit into a physical layout that is prepared for production. It goes through several steps, including RTL synthesis, floor planning, placement, routing, and the creation of the GDSII file format, which is where the layout data is eventually included. This methodical procedure guarantees that the final IC layout precisely matches the intended functionality and satisfies manufacturing specifications.
  *
 *Picture of VSD Squadron:
 <img width="599" alt="vsd squadron" src="https://github.com/user-attachments/assets/1ae35eef-52fb-420c-ac24-af3f5b02bc73">
 
-<img width="599" alt="image" src="https://github.com/user-attachments/assets/0ba426c9-f2bd-4625-9d87-f7dd2e8877ab">
 
 Intorduction:
 
