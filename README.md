@@ -101,6 +101,9 @@ After CTS, we have information of all the placed cells, blockages, clock tree bu
 * The Timing QoR is good.
 
 <img width="925" alt="routing console" src="https://github.com/user-attachments/assets/2e021b9c-6f54-44ff-99c6-0ecf149e44cf">
+<img width="869" alt="routing 1" src="https://github.com/user-attachments/assets/1ff66fe7-361e-4b22-b581-b21c86dabed5">
+<img width="929" alt="routing 2" src="https://github.com/user-attachments/assets/79d6b4ad-6ce2-4d25-99fd-7f4eb1913b5e">
+<img width="929" alt="after routing " src="https://github.com/user-attachments/assets/7b8cd3f7-c89d-4425-9b0b-bd5a777cbeee">
 
 image::https://images.app.goo.gl/33653N2Xt33wLs9A9[Routing image]
 
