@@ -55,17 +55,32 @@ Synthesis: Parts from the Standard Cell Library are used to turn the RTL file in
 ----
 image::https://images.app.goo.gl/cwsFBX2pdMvjG2mV8[Synthesis flow in VLSI]
 
+Floor plan: 
+In hierarchical processes, floorplanning offers a foundation for determining when the top level will occur. The clock cycle time is assigned to each block in a timing budget based on the top-level timing estimate. Timing closure is ensured by an efficient floorplan, which does this by arranging blocks to shorten essential paths, avoiding routing congestion that would result in longer paths, and removing the requirement for excessive routing for noise-sensitive blocks. The difficult part of designing a floor plan is making sure that there is enough room for standard cell placement, signal and clock routing, and high area efficiency.
+
+The dimensions and form of the chip or block are specified in the floorplan. Placement of IO and macro cells is being done so that effective routing space is accessible both between the macro and IO sections as well as between the channel region. We preserve the contiguous core area from the target cell library for standard cell placement and optimization technique.
+
+<img width="928" alt="run floorplan " src="https://github.com/user-attachments/assets/ede7e193-1459-451b-bca4-cd03deea1566">
+
+
 Placement :
 
 From the floor planning phase forward, components are positioned within the allocated spaces.
     Within their cell boundaries are also the Standard Cells that are necessary for the design.
     There are two stages to placement: Global Placement, in which cells may overlap, and Detailed Placement, in which cells are arranged according to placement principles to create the best possible placement.
+    
+<img width="599" alt="placement theory" src="https://github.com/user-attachments/assets/03038995-0735-4bc3-8439-a89ca33cf119">
+
+<img width="926" alt="placement magic-T" src="https://github.com/user-attachments/assets/1aa8f6ca-4837-4b0a-82fb-10a3714d85c7">
 
 image::https://images.app.goo.gl/Vqz5wU7WdAnk41Q47[placement image]
+
 
 CTS(Clock tree synthesis):
 
 A method for dividing the clock equally across each successive component of a VLSI design is called clock tree synthesis. Clock Tree Synthesis is used to minimize delay and skew. The clock tree limits and the placement data are supplied as input to Clock Tree Synthesis.
+
+<img width="926" alt="cts magic-T" src="https://github.com/user-attachments/assets/91cbdc4e-374e-4869-ba29-fbf4cca2814e">
 
 image::https://images.app.goo.gl/gNDyWN1t1Hg6g6hj7[Design before CTS]
 image::https://images.app.goo.gl/rSGBd4BdLyoNv2Un6[Design after CTS]
@@ -84,6 +99,8 @@ After CTS, we have information of all the placed cells, blockages, clock tree bu
 * There must be no or minimal congestion hot spots.
 * The Timing DRCs are met.
 * The Timing QoR is good.
+
+<img width="925" alt="routing console" src="https://github.com/user-attachments/assets/2e021b9c-6f54-44ff-99c6-0ecf149e44cf">
 
 image::https://images.app.goo.gl/33653N2Xt33wLs9A9[Routing image]
 
