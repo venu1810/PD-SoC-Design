@@ -31,6 +31,8 @@ In VLSI design, the RTL to GDSII pipeline transforms an RTL description of a dig
 AES is a commonly used cryptographic algorithm that is supported by both software and hardware nowadays. There are currently no known effective cryptanalytic attacks against AES. Furthermore, the inherent flexibility of AES's key length enables some "future-proofing" against advancements in the capacity to conduct thorough key searches.
 
 As with DES, AES security is only guaranteed, though, if proper implementation and key management are used.
+<img width="269" alt="image" src="https://github.com/user-attachments/assets/2f2b3e40-d732-4e02-8a36-a8eb9e596c3a">
+
  
 **Picture of VSD Squadron**:
 <img width="599" alt="vsd squadron" src="https://github.com/user-attachments/assets/1ae35eef-52fb-420c-ac24-af3f5b02bc73">
