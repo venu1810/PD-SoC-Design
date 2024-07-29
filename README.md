@@ -117,6 +117,7 @@ After CTS, we have information of all the placed cells, blockages, clock tree bu
 * There must be no or minimal congestion hot spots.
 * The Timing DRCs are met.
 * The Timing QoR is good.
+<img width="620" alt="image" src="https://github.com/user-attachments/assets/82ab96a8-8e15-4b95-94a9-3f981a176eaf">
 
 <img width="925" alt="routing console" src="https://github.com/user-attachments/assets/2e021b9c-6f54-44ff-99c6-0ecf149e44cf">
 <img width="869" alt="routing 1" src="https://github.com/user-attachments/assets/1ff66fe7-361e-4b22-b581-b21c86dabed5">
